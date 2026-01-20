@@ -41,52 +41,6 @@ body {
     color: #94a3b8; /* muted text */
 }
 
-/* =========================
-   Layout
-   ========================= */
-
-/* Navbar */
-
-.navbar {
-    background-color: #020617;
-    border-bottom: 1px solid #1e293b;
-    padding: 1rem 2rem;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-}
-
-.navbar-list {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.navbar-item {
-    display: inline-block;
-}
-
-.navbar-link {
-    color: #e5e7eb;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    padding: 0.5rem 0;
-    border-bottom: 2px solid transparent;
-}
-
-.navbar-link:hover {
-    color: #38bdf8;
-    border-bottom-color: #38bdf8;
-}
-
-.home {
-    display: flex;
-    flex-direction: column;
-}
 
 /* =========================
    Sections

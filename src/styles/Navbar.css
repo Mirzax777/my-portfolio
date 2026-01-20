@@ -1,0 +1,71 @@
+/* ===== Navbar Container ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Navbar List ===== */
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 1.2rem 0;
+}
+
+/* ===== Navbar Item ===== */
+.navbar-item {
+    position: relative;
+}
+
+/* ===== Navbar Link ===== */
+.navbar-link {
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #b5b5c0;
+    transition: color 0.3s ease;
+}
+
+/* ===== Gradient Underline ===== */
+.navbar-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        #ff3c3c,
+        #a855f7,
+        #3b82f6
+    );
+    transition: width 0.35s ease;
+    border-radius: 2px;
+}
+
+/* ===== Hover Effect ===== */
+.navbar-link:hover {
+    color: #ffffff;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+}
+
+/* ===== Active Route (optional later) ===== */
+.navbar-link.active {
+    color: #ffffff;
+}
+
+.navbar-link.active::after {
+    width: 100%;
+}
