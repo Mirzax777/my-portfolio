@@ -1,71 +1,45 @@
 /* ===== Navbar Container ===== */
 .navbar {
-    position: sticky;
+    background-color: #0d1117;
+    border-bottom: 1px solid #30363d;
+    padding: 1rem 2rem;
+    position: fixed;
     top: 0;
     z-index: 100;
-    background: rgba(10, 10, 15, 0.85);
+    width: 100%;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(180deg, rgba(13, 17, 23, 0.95) 0%, rgba(13, 17, 23, 0.9) 100%);
 }
 
 /* ===== Navbar List ===== */
 .navbar-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 1.2rem 0;
+    padding: 0;
 }
 
 /* ===== Navbar Item ===== */
 .navbar-item {
-    position: relative;
+    display: inline-block;
 }
 
 /* ===== Navbar Link ===== */
 .navbar-link {
+    color: #c9d1d9;
     text-decoration: none;
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #b5b5c0;
-    transition: color 0.3s ease;
-}
-
-/* ===== Gradient Underline ===== */
-.navbar-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(
-        90deg,
-        #ff3c3c,
-        #a855f7,
-        #3b82f6
-    );
-    transition: width 0.35s ease;
-    border-radius: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    position: relative;
 }
 
 /* ===== Hover Effect ===== */
 .navbar-link:hover {
-    color: #ffffff;
-}
-
-.navbar-link:hover::after {
-    width: 100%;
-}
-
-/* ===== Active Route (optional later) ===== */
-.navbar-link.active {
-    color: #ffffff;
-}
-
-.navbar-link.active::after {
-    width: 100%;
+    color: #a371f7;
+    background-color: rgba(167, 113, 247, 0.1);
 }
