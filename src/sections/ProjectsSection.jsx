@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectsCard.jsx";
 
-function Projects() {
+function ProjectsSection() {
     const projects = [
         {
             id: 1,
@@ -46,4 +46,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default ProjectsSection;

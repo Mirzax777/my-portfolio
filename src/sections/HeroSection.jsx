@@ -1,4 +1,6 @@
-function Hero() {
+import { Link } from 'react-router-dom';
+
+function HeroSection() {
     return (
         <section className="hero">
             <div className="container">
@@ -8,8 +10,8 @@ function Hero() {
                         I'm a passionate developer crafting beautiful and functional web experiences
                     </p>
                     <div className="hero-buttons">
-                        <a href="#projects" className="btn btn-primary">View My Work</a>
-                        <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+                        <Link to="/projects" className="btn btn-primary">View My Work</Link>
+                        <Link to="/about" className="btn btn-secondary">About me</Link>
                     </div>
                 </div>
             </div>
@@ -17,4 +19,4 @@ function Hero() {
     );
 }
 
-export default Hero;
+export default HeroSection;

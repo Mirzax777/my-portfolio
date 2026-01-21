@@ -1,4 +1,4 @@
-function About() {
+function AboutSection() {
     return (
         <section className="about" id="about">
             <div className="container">
@@ -34,4 +34,4 @@ function About() {
     );
 }
 
-export default About;
+export default AboutSection;
